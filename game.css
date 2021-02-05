@@ -1,0 +1,57 @@
+body {
+    background-color: burlywood;
+}
+
+h1 {
+    text-align: center;
+    border: 5px solid aqua;
+    color: burlywood;
+    padding: 25px;
+    margin: 10px;
+    background-color: rgb(32, 126, 129);
+}
+
+#b1 {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: center;
+}
+
+button {
+    background: #444;
+    border: 3px solid rgb(11, 123, 151);
+    display: flex;
+    margin: 3px;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+#reset { 
+    width: 150px; 
+    height: 60px; 
+    border: 2px solid rgb(0, 255, 76); 
+    background-color: dodgerblue; 
+    color: rgb(0, 0, 0); 
+    border-radius: 10px;
+    font-size: 20px; 
+    cursor: pointer; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+    left: 45%;
+} 
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    background-color: aqua;
+    border: 3px solid navy;
+}
+  
