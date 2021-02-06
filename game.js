@@ -35,7 +35,14 @@ function myFunction(i, j) {
     }
     
     document.getElementById('' + i + j).innerHTML = grid[i][j];
-
+    let caseEquas = 0;
+    for (let i = 0; i < 3; ++i) {
+        for (let j = 0; j < 3; ++j) {
+            if (grid[i][j] == ' ')
+                caseEquas = 1;
+        }
+    }
+    
     let contor = null;
     for (let i = 0; i < 3; ++i) {
         // cases horizontal
@@ -60,6 +67,8 @@ function myFunction(i, j) {
     else if (contor === '0') {
         alert("Player 0 win")
         document.getElementById("print").innerHTML = "Player 0 win";
+    } else if (caseEquas == 0) {
+        document.getElementById("print").innerHTML = "Match equals";
     }  
     else {
         if (next == 0) {
