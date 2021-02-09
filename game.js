@@ -25,6 +25,9 @@ function equals(a, b, c) {
 }
 
 function myFunction(i, j) {
+    if (grid[i][j] != ' ') {
+        return;
+    }
     grid[i][j] = player;
     if (player == 'X') {
         player = '0';
